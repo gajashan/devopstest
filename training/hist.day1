@@ -1,0 +1,76 @@
+    1  ls
+    2  ls -l
+    3  ls -lrt
+    4  ls -l /
+    5  pwd
+    6  ls -l /home
+    7  javac
+    8  java --version
+    9  java -version
+   10  git
+   11  git clone https://github.com/gajashan/devopstest.git
+   12  ls -l
+   13  history
+   14  ls -lR
+   15  ls -lRa
+   16  cd devopstest/
+   17  ls
+   18  ls -la
+   19  git status
+   20  ls -al
+   21  ls -la .git
+   22  git add index.html 
+   23  git status
+   24  git commit -m "first commit" index.html 
+   25  git status
+   26  git config --global user.name "Gajanan S"
+   27  git config --global user.email gaja.shan@gmail.com
+   28  git status
+   29  git log index.html 
+   30  git push
+   31  git log
+   32  git log index.html 
+   33  git branch -v
+   34  git branch test
+   35  git branch dev
+   36  git branch -v
+   37  git checkout test
+   38  pwd
+   39  git checkout dev
+   40  git branch -v
+   41  git add *
+   42  git commit -m "Dev branch commit"
+   43  git branch -v
+   44  git checkout test
+   45  git merge dev
+   46  git branch -v
+   47  svn add *
+   48  git add *
+   49  git commit -m "test branch commit"
+   50  get checkout dev
+   51  git checkout dev
+   52  git branch -v
+   53  git add *
+   54  git commit -m "dev branch commit"
+   55  git branch -v
+   56  git diff index.html 
+   57  git log index.html 
+   58  git merge test
+   59  git add *
+   60  git commit -m "merged manually"
+   61  git branch -v
+   62  git status
+   63  git log index.html 
+   64  git remote -v
+   65  git push --set-upstream origin devopstest-dev-1.0
+   66  git push --set-upstream origin dev:devopstest-dev-1.0
+   67  git add *
+   68  git commit -m "local "
+   69  git push --set-upstream origin dev:devopstest-dev-1.0
+   70  git pull origin devopstest-dev-1.0
+   71  git branch -v --all
+   72  git add *
+   73  git commit -m "dev2 merge" 
+   74  git push --set-upstream origin dev:devopstest-dev-1.0
+   75  history
+   76  history > ../hist.day1

@@ -1,0 +1,190 @@
+    1  ls
+    2  ls -l
+    3  ls -lrt
+    4  ls -l /
+    5  pwd
+    6  ls -l /home
+    7  javac
+    8  java --version
+    9  java -version
+   10  git
+   11  git clone https://github.com/gajashan/devopstest.git
+   12  ls -l
+   13  history
+   14  ls -lR
+   15  ls -lRa
+   16  cd devopstest/
+   17  ls
+   18  ls -la
+   19  git status
+   20  ls -al
+   21  ls -la .git
+   22  git add index.html 
+   23  git status
+   24  git commit -m "first commit" index.html 
+   25  git status
+   26  git config --global user.name "Gajanan S"
+   27  git config --global user.email gaja.shan@gmail.com
+   28  git status
+   29  git log index.html 
+   30  git push
+   31  git log
+   32  git log index.html 
+   33  git branch -v
+   34  git branch test
+   35  git branch dev
+   36  git branch -v
+   37  git checkout test
+   38  pwd
+   39  git checkout dev
+   40  git branch -v
+   41  git add *
+   42  git commit -m "Dev branch commit"
+   43  git branch -v
+   44  git checkout test
+   45  git merge dev
+   46  git branch -v
+   47  svn add *
+   48  git add *
+   49  git commit -m "test branch commit"
+   50  get checkout dev
+   51  git checkout dev
+   52  git branch -v
+   53  git add *
+   54  git commit -m "dev branch commit"
+   55  git branch -v
+   56  git diff index.html 
+   57  git log index.html 
+   58  git merge test
+   59  git add *
+   60  git commit -m "merged manually"
+   61  git branch -v
+   62  git status
+   63  git log index.html 
+   64  git remote -v
+   65  git push --set-upstream origin devopstest-dev-1.0
+   66  git push --set-upstream origin dev:devopstest-dev-1.0
+   67  git add *
+   68  git commit -m "local "
+   69  git push --set-upstream origin dev:devopstest-dev-1.0
+   70  git pull origin devopstest-dev-1.0
+   71  git branch -v --all
+   72  git add *
+   73  git commit -m "dev2 merge" 
+   74  git push --set-upstream origin dev:devopstest-dev-1.0
+   75  history
+   76  history > ../hist.day1
+   77  ls -l ..
+   78  sudo yum -y install java-1.8.0-openjdk.x86_64
+   79  sudo yum -y remove java-1.7.0-openjdk
+   80  java -version
+   81  cat /etc/yum.repos.d/
+   82  cat /etc/yum.repos.d/amzn-main.repo 
+   83  yum repo list
+   84  yum repolist
+   85  yum -v repolist
+   86  sudo wget -O /etc/yum.repos.d/jenkins.repo 
+   87  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+   88  yum repolist
+   89  sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+   90  sudo yum install -y  jenkins
+   91  uname -x
+   92  uname -a
+   93  sudo service jenkins start
+   94  sudo chkconfig jenkins on
+   95  sudo chkconfig jenkins status
+   96  sudo service jenkins status
+   97  cat /var/lib/jenkins/secrets/initialAdminPassword
+   98  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   99  pwdw
+  100  pwd
+  101  history
+  102  get checkout dev
+  103  git checkout dev
+  104  ls -l
+  105  cd devopstest/
+  106  git checkout dev
+  107  ls -l
+  108  git push --set-upstream origin dev:devopstest-dev-1.0
+  109  git add *
+  110  git commit -m "jenkins" 
+  111  git push --set-upstream origin dev:devopstest-dev-1.0
+  112  git add *
+  113  git commit -m "jenkins" 
+  114  git push --set-upstream origin dev:devopstest-dev-1.0
+  115  wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+  116  ls -l
+  117  cd
+  118  cd -
+  119  mv apache-maven-3.5.4-bin.tar.gz ../
+  120  cd ..
+  121  ls -l
+  122  tar xzvf apache-maven-3.5.4-bin.tar.gz
+  123  ls -l
+  124  sudo mv apache-maven-3.5.4 /usr/local
+  125  ls -l
+  126  sudo yum -y install java-1.8.0-openjdk-devel
+  127  ls -l /usr/local/apache-maven-3.5.4/bin/mvn
+  128  mvn
+  129  /usr/local/apache-maven-3.5.4/bin/mvn
+  130  ls -l /var/lib/jenkins/
+  131  ls -l /var/lib/jenkins/work
+  132  ls -l /var/lib/jenkins/workspace/
+  133  ls -l /var/lib/jenkins/secret
+  134  ls -l /var/lib/jenkins/secrets/
+  135  sudo yum -y install ansible 
+  136  ansible-playbook
+  137  ls -l
+  138  chmod 600 webkey.pem 
+  139  ls -l
+  140  ls -l webkey.pem 
+  141  pwd
+  142  sudo vi /etc/ansible/ansible.cfg 
+  143  ansible -i ansiblehosts -m ping webservers
+  144  sudo vi /etc/ansible/ansible.cfg 
+  145  yum
+  146  ansible-playbook -i ansiblehosts web.yaml 
+  147  ls -l
+  148  ls -l /var/lib/jenkins/
+  149  start service httpd
+  150  history | grep service
+  151  sudo service jenkins start
+  152  hostname
+  153  sudo service jenkins status
+  154  sudo service httpd start
+  155  ansible-playbook -i ansiblehosts web.yaml 
+  156  sudo pip install boto boto3 botocore 
+  157  ansible-playbook createimage.yaml 
+  158  ansible-playbook createimage.yaml -e "ansible_python_interpreter=/usr/bin/python"
+  159  git clone https://github.com/mohanraz81/ansibleautomation
+  160  ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+  161  ls -al
+  162  mv ~/.aws ~/.awsbkup
+  163  ls -la ..
+  164  ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+  165  sudo service jenkins status
+  166  sudo service httpd start
+  167  cd devopstest/
+  168  git add *
+  169  git commit -m "deploy scripts"
+  170  git add *
+  171  git commit -m "deploy scripts"
+  172  git push --set-upstream origin dev:devopstest-dev-1.0
+  173  sudo service httpd start
+  174  sudo service jenkins start
+  175  ps -ef | more
+  176  tail /var/log//jenkins/
+  177  ls -l /var/log/jenkins/
+  178  sudo ls -l /var/log/jenkins/
+  179  sudo tail /var/log/jenkins/jenkins.log
+  180  sudo yum -y install docker
+  181  sudo service docker start
+  182  sudo service docker status
+  183  groups
+  184  whoami
+  185  sudo usermod -a -G docker ec2-user
+  186  whoami
+  187  groups
+  188  docker ifo
+  189  docker info
+  190  history > hist.day4

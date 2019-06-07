@@ -1,0 +1,374 @@
+    1  ls
+    2  ls -l
+    3  ls -lrt
+    4  ls -l /
+    5  pwd
+    6  ls -l /home
+    7  javac
+    8  java --version
+    9  java -version
+   10  git
+   11  git clone https://github.com/gajashan/devopstest.git
+   12  ls -l
+   13  history
+   14  ls -lR
+   15  ls -lRa
+   16  cd devopstest/
+   17  ls
+   18  ls -la
+   19  git status
+   20  ls -al
+   21  ls -la .git
+   22  git add index.html 
+   23  git status
+   24  git commit -m "first commit" index.html 
+   25  git status
+   26  git config --global user.name "Gajanan S"
+   27  git config --global user.email gaja.shan@gmail.com
+   28  git status
+   29  git log index.html 
+   30  git push
+   31  git log
+   32  git log index.html 
+   33  git branch -v
+   34  git branch test
+   35  git branch dev
+   36  git branch -v
+   37  git checkout test
+   38  pwd
+   39  git checkout dev
+   40  git branch -v
+   41  git add *
+   42  git commit -m "Dev branch commit"
+   43  git branch -v
+   44  git checkout test
+   45  git merge dev
+   46  git branch -v
+   47  svn add *
+   48  git add *
+   49  git commit -m "test branch commit"
+   50  get checkout dev
+   51  git checkout dev
+   52  git branch -v
+   53  git add *
+   54  git commit -m "dev branch commit"
+   55  git branch -v
+   56  git diff index.html 
+   57  git log index.html 
+   58  git merge test
+   59  git add *
+   60  git commit -m "merged manually"
+   61  git branch -v
+   62  git status
+   63  git log index.html 
+   64  git remote -v
+   65  git push --set-upstream origin devopstest-dev-1.0
+   66  git push --set-upstream origin dev:devopstest-dev-1.0
+   67  git add *
+   68  git commit -m "local "
+   69  git push --set-upstream origin dev:devopstest-dev-1.0
+   70  git pull origin devopstest-dev-1.0
+   71  git branch -v --all
+   72  git add *
+   73  git commit -m "dev2 merge" 
+   74  git push --set-upstream origin dev:devopstest-dev-1.0
+   75  history
+   76  history > ../hist.day1
+   77  ls -l ..
+   78  sudo yum -y install java-1.8.0-openjdk.x86_64
+   79  sudo yum -y remove java-1.7.0-openjdk
+   80  java -version
+   81  cat /etc/yum.repos.d/
+   82  cat /etc/yum.repos.d/amzn-main.repo 
+   83  yum repo list
+   84  yum repolist
+   85  yum -v repolist
+   86  sudo wget -O /etc/yum.repos.d/jenkins.repo 
+   87  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+   88  yum repolist
+   89  sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+   90  sudo yum install -y  jenkins
+   91  uname -x
+   92  uname -a
+   93  sudo service jenkins start
+   94  sudo chkconfig jenkins on
+   95  sudo chkconfig jenkins status
+   96  sudo service jenkins status
+   97  cat /var/lib/jenkins/secrets/initialAdminPassword
+   98  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   99  pwdw
+  100  pwd
+  101  history
+  102  get checkout dev
+  103  git checkout dev
+  104  ls -l
+  105  cd devopstest/
+  106  git checkout dev
+  107  ls -l
+  108  git push --set-upstream origin dev:devopstest-dev-1.0
+  109  git add *
+  110  git commit -m "jenkins" 
+  111  git push --set-upstream origin dev:devopstest-dev-1.0
+  112  git add *
+  113  git commit -m "jenkins" 
+  114  git push --set-upstream origin dev:devopstest-dev-1.0
+  115  wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+  116  ls -l
+  117  cd
+  118  cd -
+  119  mv apache-maven-3.5.4-bin.tar.gz ../
+  120  cd ..
+  121  ls -l
+  122  tar xzvf apache-maven-3.5.4-bin.tar.gz
+  123  ls -l
+  124  sudo mv apache-maven-3.5.4 /usr/local
+  125  ls -l
+  126  sudo yum -y install java-1.8.0-openjdk-devel
+  127  ls -l /usr/local/apache-maven-3.5.4/bin/mvn
+  128  mvn
+  129  /usr/local/apache-maven-3.5.4/bin/mvn
+  130  ls -l /var/lib/jenkins/
+  131  ls -l /var/lib/jenkins/work
+  132  ls -l /var/lib/jenkins/workspace/
+  133  ls -l /var/lib/jenkins/secret
+  134  ls -l /var/lib/jenkins/secrets/
+  135  sudo yum -y install ansible 
+  136  ansible-playbook
+  137  ls -l
+  138  chmod 600 webkey.pem 
+  139  ls -l
+  140  ls -l webkey.pem 
+  141  pwd
+  142  sudo vi /etc/ansible/ansible.cfg 
+  143  ansible -i ansiblehosts -m ping webservers
+  144  sudo vi /etc/ansible/ansible.cfg 
+  145  yum
+  146  ansible-playbook -i ansiblehosts web.yaml 
+  147  ls -l
+  148  ls -l /var/lib/jenkins/
+  149  start service httpd
+  150  history | grep service
+  151  sudo service jenkins start
+  152  hostname
+  153  sudo service jenkins status
+  154  sudo service httpd start
+  155  ansible-playbook -i ansiblehosts web.yaml 
+  156  sudo pip install boto boto3 botocore 
+  157  ansible-playbook createimage.yaml 
+  158  ansible-playbook createimage.yaml -e "ansible_python_interpreter=/usr/bin/python"
+  159  git clone https://github.com/mohanraz81/ansibleautomation
+  160  ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+  161  ls -al
+  162  mv ~/.aws ~/.awsbkup
+  163  ls -la ..
+  164  ansible-playbook deployvm.yml -e "ansible_python_interpreter=/usr/bin/python"
+  165  sudo service jenkins status
+  166  sudo service httpd start
+  167  cd devopstest/
+  168  git add *
+  169  git commit -m "deploy scripts"
+  170  git add *
+  171  git commit -m "deploy scripts"
+  172  git push --set-upstream origin dev:devopstest-dev-1.0
+  173  sudo service httpd start
+  174  sudo service jenkins start
+  175  ps -ef | more
+  176  tail /var/log//jenkins/
+  177  ls -l /var/log/jenkins/
+  178  sudo ls -l /var/log/jenkins/
+  179  sudo tail /var/log/jenkins/jenkins.log
+  180  sudo yum -y install docker
+  181  sudo service docker start
+  182  sudo service docker status
+  183  groups
+  184  whoami
+  185  sudo usermod -a -G docker ec2-user
+  186  whoami
+  187  groups
+  188  docker ifo
+  189  docker info
+  190  history > hist.day4
+  191  groups
+  192  id -a
+  193  docker info
+  194  docker pull httpd:2.4
+  195  ls -l
+  196  docker images
+  197  docker pull httpd
+  198  docker images
+  199  cd testapp/
+  200  docker build -t gajashan/myapache:1.0 .
+  201  cd frontend/
+  202  docker build -t gajashan/myapache:1.0 .
+  203  docker images
+  204  docker run --name testapache -d -p 9000:80 gajashan/myapache:1.0 
+  205  curl http://loalhost:9000
+  206  curl http://localhost:9000
+  207  docker ps
+  208  docker logs testapache
+  209  docker stop testapache; docker rm testapache
+  210  docker ps
+  211  docker build -t gajashan/myapache:1.1 .
+  212  docker run --name testapache -d -p 9000:80 gajashan/myapache:1.1 
+  213  docker ps
+  214  curl http://localhost:9000
+  215  history
+  216  curl http://localhost:9000
+  217  docker images
+  218  ls -l /var/lib/docker/
+  219  sudo ls -l /var/lib/docker/
+  220  sudo ls -l /var/lib/docker/image
+  221  sudo ls -l /var/lib/docker/image/overlay2
+  222  sudo ls -l /var/lib/docker/containers
+  223  cd ../..
+  224  ls
+  225  ls -l
+  226  cd ngapp/
+  227  ls -l
+  228  cd frontend/
+  229  ls -l
+  230  docker build -t gajashan/ngapp:1.0 .
+  231  ls -l
+  232  docker build -t gajashan/ngapp:1.0 .
+  233  docker build -t -e TZ=America/New_York gajashan/ngapp:1.0 .
+  234  docker build -e TZ=America/New_York -t gajashan/ngapp:1.0 .
+  235  docker build -t gajashan/ngapp:1.0 .
+  236  docker ps
+  237  docker packages
+  238  docker package
+  239  history
+  240  docker images
+  241  docker run -d --name ngapp -p 9001:80 gajashan:ngapp:1.0
+  242  docker run -d --name ngapp -p 9001:80 gajashan/ngapp:1.0
+  243  curl http://localhost:9001
+  244  docker ps
+  245  docker ps -a
+  246  docker stop testapache
+  247  docker ps -a
+  248  docker ps 
+  249  docker run -d --name ngapp -p 9001:80 gajashan/ngapp:1.0
+  250  docker ps
+  251  docker ps -a
+  252  docker log ngapp
+  253  docker logs ngapp
+  254  docker build -t gajashan/ngapp:1.1 .
+  255  docker images
+  256  docker run -d --name ngapp -p 9001:80 gajashan/ngapp:1.1
+  257  docker rm ngapp
+  258  docker run -d --name ngapp -p 9001:80 gajashan/ngapp:1.1
+  259  curl http://localhost:9001
+  260  docker history gajashan/ngapp:1.0
+  261  docker history gajashan/ngapp:1.1
+  262  docker stop testapache ngapp;
+  263  docker rm testapache ngapp;
+  264  docker ps
+  265  docker ps -a
+  266  docker rm zealous_dijkstra
+  267  docker rm tender_snyder  fervent_hodgkin  stoic_jennings cocky_shaw  clever_morse inspiring_rosalind thirsty_kapitsa distracted_jennings thirsty_kapitsa frosty_edison
+  268  docker ps -a
+  269  docker rm practical_easley compassionate_zhukovsky elastic_wozniak nifty_turing
+  270  docker ps -a
+  271  docker run -d --name ngapp -p 9001:80 -v ngapp_var_log:/var/log gajashan/ngapp:1.1
+  272  docker volume ls
+  273  ls -l /var/log/ngapp_var_log
+  274  sudo ls -l /var/log/ngapp_var_log
+  275  docker inspect ngapp_var_log
+  276  sudo bash
+  277  docker exec -it ngapp
+  278  docker exec -it ngapp /bin/bash
+  279  docker run -dit --name logagent -v ngapp_var_log:/ngapp_var_log:ro ubuntu:18.04
+  280  docker exec -it logagent /bin/bash
+  281  docker ps -a
+  282  docker stop ngapp; docker rm ngapp
+  283  docker ps -a
+  284  docker  volume ls
+  285  docker sps
+  286  docker ps
+  287  df -h .
+  288  docker stop logagent; docker rm logagent
+  289  docker ps
+  290  docker ps -a
+  291  docker login
+  292  docker images
+  293  docker push gajashan/ngapp:1.1 gajashan/ngapp:latest
+  294  docker tag gajashan/ngapp:1.1 gajashan/ngapp:latest
+  295  docker images
+  296  docker push gajashan/ngapp
+  297  dig ns student7.courseandlabs.com
+  298  wget -O kops https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
+  299  chmod +x ./kops
+  300  sudo mv ./kops /usr/local/bin/
+  301  kops
+  302  ls -l
+  303  cd
+  304  cd -
+  305  cd ../..
+  306  wget -O kubectl https://storage.googleapis.com/kubernetes-release/release/v1.8.1/bin/linux/amd64/kubectl
+  307  chmod +x ./kubectl
+  308  sudo mv ./kubectl /usr/local/bin/kubectl
+  309  kuberctl
+  310  kubectl
+  311  aws s3api create-bucket --bucket kube-student7-courseandlabs-com  --region us-east-1
+  312  aws s3api put-bucket-versioning --bucket kube-student7-courseandlabs-com  --versioning-configuration Status=Enabled
+  313  echo "export NAME=kubecluster.student7-courseandlabs-com" >> ~/.bash_profile
+  314  echo "export KOPS_STATE_STORE=s3://kube-student7-courseandlabs-com" >> ~/.bash_profile
+  315  echo $NAME
+  316  echo $KOPS_STATE_STORE
+  317  mv ~/.aws ~/.awsbkp
+  318  ssh-keygen
+  319  kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --authorization RBAC     --name ${NAME} --yes
+  320  echo $NAME
+  321  echo $KOPS_STATE_STORE
+  322  vi ~/.bash_profile 
+  323  echo $NAME
+  324  kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --authorization RBAC     --name ${NAME} --yes
+  325  echo $KOPS_STATE_STORE
+  326  kops validate cluster
+  327  cat ~/.kube/config
+  328  kubectl get nodes
+  329  kubectl get namespaces
+  330  kubectl get pods default
+  331  kubectl get pods --namespace=kube-system
+  332  kubectl create namespace test
+  333  kubectl describe namespace test
+  334  kubectl config set-context $(kubectl config current-context) --namespace=test
+  335  kubectl describe namespace test
+  336  kubectl config view | grep namespace
+  337  kubectl apply -f ngnix.yaml 
+  338  kubectl get deployments
+  339  kubectl describe deployments nginx-deployment 
+  340  kubectl get rs
+  341  kubectl get pods
+  342  kubectl describe pod nginx-deployment-fdbc8d8bd-5b7r7
+  343  kubectl get services
+  344  kubectl describe service testfrontend
+  345  curl www .student7.courseandlabs.com.  
+  346  curl http://www.student7.courseandlabs.com
+  347  docker build -t gajashan/ngapp:1.2 .
+  348  cd ngapp
+  349  docker build -t gajashan/ngapp:1.2 .
+  350  cd frontend
+  351  docker build -t gajashan/ngapp:1.2 .
+  352  docker images
+  353  docker push gajashan/ngapp:1.2
+  354  cd ../..
+  355  kubectl apply -f ngnix.yaml 
+  356  kubectl get rs
+  357  kubectl delete all -all
+  358  kubectl delete all --all
+  359  git clone https://github.com/kubernetes/heapster.git
+  360  ls
+  361  l s-l
+  362  cd heapster/
+  363  ls -l
+  364  cd ..
+  365  cd -
+  366  kubectl apply -f deploy/kube-config/influxdb/
+  367  kubectl apply -f deploy/kube-config/rbac/heapster-rbac.yaml
+  368  kubectl get deployment --namespace=system
+  369  kubectl get deployment --namespace=kube-system
+  370  kubectl get services --namespace=kube-system
+  371  cd ..
+  372  kubectl apply -f autoscaling.yaml 
+  373  kubectl get hpa
+  374  history > hist.day3
